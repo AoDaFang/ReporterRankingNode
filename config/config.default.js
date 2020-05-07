@@ -47,16 +47,15 @@ module.exports = appInfo => {
   config.mysql = {
     client: {
       // host
-      host: '106.13.98.185',
+      host: '182.92.198.108',
       // 端口号
       port: '3306',
       // 用户名
-      user: 'buff',
-      // user: 'bufftest',
+      user: 'ReporterRankDB',
       // 密码
       password: 'fmw123456',
       // 数据库名
-      database: 'buff',
+      database: 'ReporterRankDB',
       // database: 'bufftest',
     },
     // 是否加载到 app 上，默认开启
@@ -70,6 +69,7 @@ module.exports = appInfo => {
     baseUrl: 'https://buff.163.com/',
     getItemArr: 'api/market/goods/sell_order',
   };
+  // 
   // 配置参数校验相关信息
   config.validate = {
     // 设置检验不通时的返回体

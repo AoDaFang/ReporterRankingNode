@@ -3,14 +3,14 @@
 const Service = require('egg').Service;
 
 class user extends Service {
-  // 根据用户id 获取用户信息
-  async selectUserById(id) {
+  // 根据用户phone 获取用户信息
+  async selectUserByPhone(phone) {
     const res = await this.app.mysql.select('user', {
       where: {
-        id,
+        phone
       },
     });
-    return { res };
+    return res;
   }
 }
 
